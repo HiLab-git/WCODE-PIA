@@ -17,7 +17,7 @@
 
 ---
 ## 🔬 Code for partially labeled medical image segmentation.
-Some implementations of compared state-of-the-art (SOTA) methods can be found [**here**](https://github.com/WltyBY/WCODE-PIA/tree/main/wcode/training/Trainers).
+Some implementations of compared state-of-the-art (SOTA) methods can be found [**here**](https://github.com/HiLab-git/WCODE-PIA/tree/main/wcode/training/Trainers).
 
 <!-- --- -->
 <!-- ## ⛺ Discussion of the task setting and general usage -->
