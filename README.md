@@ -1,4 +1,4 @@
-# ⛺ WCODE-PIA: Partial-instance Annotation
+# WCODE-PIA: Partial-instance Annotation
 
 **WCODE-PIA**, that focuses on the learning of incomplete annotations, is a medical image segmentation framework improved from [**WCODE**](https://github.com/WltyBY/WCODE).
 
@@ -20,7 +20,7 @@
 Some implementations of compared state-of-the-art (SOTA) methods can be found [**here**](https://github.com/WltyBY/WCODE-PIA/tree/main/wcode/training/Trainers).
 
 <!-- --- -->
-<!-- ## 💡 Discussion of the task setting and general usage -->
+<!-- ## ⛺ Discussion of the task setting and general usage -->
 
 ---
 
