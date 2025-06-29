@@ -1,0 +1,16 @@
+acvl_utils
+matplotlib
+numpy
+PyYAML
+scipy
+seaborn
+SimpleITK
+torch
+tqdm
+opencv-python
+shapely
+scikit-image
+fft_conv_pytorch
+pydicom
+pandas
+nibabel
