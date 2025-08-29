@@ -24,6 +24,7 @@ Some implementations of compared state-of-the-art (SOTA) methods can be found [*
 |**IA**|C. Fang et al.|Reliable Mutual Distillation for Medical Image Segmentation Under Imperfect Annotations|[RMD](https://github.com/HiLab-git/WCODE-PIA/tree/main/wcode/training/Trainers/Weakly/NLL/RMD)|[TMI2023](https://ieeexplore.ieee.org/abstract/document/10021263)|
 |**IA**|T. Weng et al.|Accurate Segmentation of Optic Disc and Cup from Multiple Pseudo-labels by Noise-aware Learning|[MPNN](https://github.com/HiLab-git/WCODE-PIA/tree/main/wcode/training/Trainers/Weakly/NLL/MPNN)|[CSCWD2024](https://ieeexplore.ieee.org/abstract/document/10580087)|
 |**IC**|C. Liu et al.|AIO2: Online Correction of Object Labels for Deep Learning With Incomplete Annotation in Remote Sensing Image Segmentation|None|[TGRS2024](https://ieeexplore.ieee.org/abstract/document/10460569)
+|**IC**|H. Zhou et al.|Unsupervised domain adaptation for histopathology image segmentation with incomplete labels|None|[CBM2024](https://www.sciencedirect.com/science/article/abs/pii/S001048252400310X)|
 
 <!-- --- -->
 <!-- ## ⛺ Discussion of the task setting and general usage -->
