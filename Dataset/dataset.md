@@ -37,7 +37,7 @@ BaiduNetdisk: https://pan.baidu.com/s/1YPWDLlkdRcyZZgCpJZ2weA?pwd=0319
 
 BaiduNetdisk: https://pan.baidu.com/s/1iBYnbx_ZcvUxzCAlP9tKTA?pwd=0319
 
-If you used the datasets we processed, please **cite** the following papers as well as the papers corresponding to the two datasets.
+If you used the datasets we processed, please **cite** the following paper as well as the papers corresponding to the two datasets.
 
 ```
 @inproceedings{wang2025reco,
