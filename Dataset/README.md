@@ -27,7 +27,7 @@
 
 # Our preprocessed dataset
 
-Below are only the images we have processed and their corresponding annotations. We cropped the images to the lung region.
+Below are only the images we have processed with corresponding annotations. We cropped the images to the lung region. Provided annotations contain all data we used (Full/Partial-Instance/Orthogonal Partial-Instance).
 
 ## **LNQ2023 Dataset**
 

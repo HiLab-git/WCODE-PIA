@@ -33,5 +33,29 @@ Some implementations of compared state-of-the-art (SOTA) methods can be found [*
 
 
 ---
+## 📚Citation
+
+```
+@article{wang2024weakly,
+  title={Weakly Supervised Lymph Nodes Segmentation Based on Partial Instance Annotations with Pre-trained Dual-branch Network and Pseudo Label Learning},
+  author={Wang, Litingyu and Qu, Yijie and Luo, Xiangde and Liao, Wenjun and Zhang, Shichuan and Wang, Guotai},
+  journal={Machine Learning for Biomedical Imaging},
+  volume={2},
+  note={MICCAI 2023 LNQ challenge special issue},
+  pages={1030--1047},
+  year={2024}
+}
+
+@inproceedings{wang2025reco,
+  title={ReCo-I2P: An Incomplete Supervised Lymph Node Segmentation Framework Based on Orthogonal Partial-Instance Annotation},
+  author={Wang, Litingyu and Ye, Ping and Liao, Wenjun and Zhang, Shichuan and Zhang, Shaoting and Wang, Guotai},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={507--517},
+  year={2025},
+  organization={Springer}
+}
+```
+
 ## ✉️ Contact
+
 --- Email: litingyuwang@gmail.com
