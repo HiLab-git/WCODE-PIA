@@ -33,11 +33,17 @@ Some implementations of compared state-of-the-art (SOTA) methods can be found [*
 
 
 ---
-## 💾 Dataset and Weight of Models
+## 💾 Dataset and Related Weight of Models
 
 We only provide the preprocessed dataset used in the experiment; see [this file](/Dataset/README.md) for details.
 
+### Related weight of models
 
+| Dataset         |   DSC (%)   |  ASSD (mm)  |  I-F1 (%)   |
+| --------------- | :---------: | :---------: | :---------: |
+| LNQ2023 ($P_1$) | 57.97±15.90 | 10.88±11.40 | 31.66±14.83 |
+
+LNQ2023 - BaiduNetdisk: https://pan.baidu.com/s/1vyDE5N51vtCqLFIXH-Srcw?pwd=0319
 
 ## 📚 Citation
 
