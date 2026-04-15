@@ -8,11 +8,7 @@ from wcode.utils.file_operations import open_yaml
 from wcode.inferring.utils.load_pretrain_weight import load_pretrained_weights
 
 # the architecture of model
-from wcode.training.Trainers.Weakly.Incomplete_Learning.TestTrainer_0.models import (
-    DIVNet_v3,
-    DIVNet_CBAM,
-    DIVNet_CrossAttention,
-)
+from wcode.training.Trainers.Weakly.Incomplete_Learning.ReCo_I2P_Plus.models import DIVNet_v4
 from wcode.training.Trainers.Weakly.Incomplete_Learning.ReCo_I2P.models import UsedVNet
 from wcode.training.Trainers.Weakly.Incomplete_Learning.AIO2.models import MeanTeacher
 from wcode.training.Trainers.Weakly.NLL.Coteaching.models import BiNet
@@ -100,12 +96,12 @@ if __name__ == "__main__":
         os.makedirs(args.o)
 
     model = MeanTeacher(config_dict["Network"])
-    # model = DIVNet_CrossAttention(
+    # model = DIVNet_v4(
     #     config_dict["Network"],
     #     num_prototype=3,
     #     memory_rate=0.999,
-    #     update_way="merge",
-    #     select_way="most",
+    #     update_way="least",
+    #     select_way="merge",
     # )
     # model = BiNet(config_dict["Network"])
     # model = UsedVNet(config_dict["Network"], num_prototype=1, memory_rate=0.99)

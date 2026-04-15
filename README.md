@@ -16,7 +16,7 @@
 
 ---
 ## 🔬 Related Literatures
-Some implementations of compared state-of-the-art (SOTA) methods can be found [**here**](https://github.com/HiLab-git/WCODE-PIA/tree/main/wcode/training/Trainers).
+Some implementations of compared state-of-the-art (SOTA) methods can be found [**here**](/wcode/training/Trainers).
 
 **IA** - Inaccurate label, **IC** - Incomplete label
 
@@ -44,6 +44,52 @@ We only provide the preprocessed dataset used in the experiment; see [this file]
 | LNQ2023 ($P_1$) | 57.97±15.90 | 10.88±11.40 | 31.66±14.83 |
 
 LNQ2023 - BaiduNetdisk: https://pan.baidu.com/s/1vyDE5N51vtCqLFIXH-Srcw?pwd=0319
+
+## 🚀 Quick Start / Usage
+
+### Preparation of Python Environment
+
+Create a Python environment using conda.
+
+```bash
+# Create virtual environment
+conda create -n wcode python=3.11
+
+conda activate wcode
+```
+
+You can install PyTorch first from [the official website]([PyTorch](https://pytorch.org/)). In our implementation, we adapt PyTorch 2.5.1. Then, install additional dependencies.
+
+```bash
+pip install -r ./wcode/requirements.txt
+```
+
+### Data Preprocessing
+
+1. Use the scripts in `./wcode/convert_datasets` to convert the dataset into a format compatible with the [WCODE](https://github.com/WltyBY/WCODE) repository, detailed in [`support_dataset_format.md`](https://github.com/WltyBY/WCODE/blob/main/documentation/support_dataset_format.md). If you use the dataset we provide, this step is unnecessary.
+2. Run `./wcode/data_analysis_and_preprocess.py` in this repository to preprocess the dataset (details are in [`dataset_analysis_and_preprocess.md`]([dataset_analysis_and_preprocess.md](https://github.com/WltyBY/WCODE/blob/main/documentation/dataset_analysis_and_preprocess.md))).
+
+```bash
+# a quick start
+PYTHONPATH=. python3 wcode/data_analysis_and_preprocess.py --dataset LNQ2023 --preprocess_config 3d
+
+# using PYTHONPATH=. python3 wcode/data_analysis_and_preprocess.py -h to see all the params.
+```
+
+The preprocessed data will be saved in `./Dataset_preprocessed`.
+
+### Training
+
+The training scripts are saved in the `train.py` file within each method's implementation directory in [`./wcode/training/Trainers`](/wcode/training/Trainers).
+
+```bash
+# Run ReCo-I2P
+PYTHONPATH=. python3 wcode/training/Trainers/Weakly/Incomplete_Learning/ReCo_I2P/train.py --name_setting LNQ2023_ReCo_I2P.yaml -f 0 
+```
+
+### Predicting
+
+Under the `./wcode` directory, three prediction scripts start with "predict" are used for inference: `predict.py`, `predict_for_unregistered_model.py`, and `predict_data_from_another_dataset.py`. Among them, the first two scripts are required for normal use cases: the first is for direct inference with models provided by **WCODE** in [`./wcode/net/build_network.py`](/wcode/net/build_network.py), while the second is for custom models.
 
 ## 📚 Citation
 
