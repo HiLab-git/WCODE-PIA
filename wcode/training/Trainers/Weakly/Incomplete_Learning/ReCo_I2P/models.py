@@ -162,7 +162,7 @@ class UsedVNet(nn.Module):
             )
 
     def forward(self, x, is_infer=True):
-        print(self.prototype_memory)
+        # print(self.prototype_memory)
         main_features = self.encoder(x)
         main_outfeatures = self.decoder(main_features)
 
